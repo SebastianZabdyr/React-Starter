@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
@@ -42,8 +43,6 @@ class List extends React.Component {
   }
 
   render() {
-
-    console.log(this.state.columns);
     return (
       <section className={styles.component}>
         <Hero titleText={this.props.title} image={this.props.image} />

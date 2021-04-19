@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Icon from '../Icon/Icon.js';
 import {listData, settings} from '../../data/dataStore';
 import Card from '../Card/Card.js';
+import Creator from '../Creator/Creator.js';
 
 class Column extends React.Component {
     state = {
@@ -19,8 +21,21 @@ class Column extends React.Component {
     cards: PropTypes.array,
   }
 
+  addCard(title){
+    this.setState(state => (
+      {
+        cards: [
+          ...state.cards,
+          {
+            key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
+            title,
+          }
+        ]
+      }
+    ));
+  }
+
   render(){
-    console.log('column:', this.props.cards );
     return(
       <main className={styles.component}>
         <h3 className={styles.title}>
@@ -33,6 +48,9 @@ class Column extends React.Component {
           {this.state.cards.map(({title}) => (
             <Card cards={title} />
           ))}
+        </div>
+        <div className={styles.creator}>
+          <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </main>
     );
