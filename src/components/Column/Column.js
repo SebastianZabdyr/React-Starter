@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/*eslint-disable react/prop-types*/
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
@@ -29,8 +30,8 @@ class Column extends React.Component {
           {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -46,7 +47,7 @@ class Column extends React.Component {
         </h3>
         <div>
           {this.state.cards.map(({title}) => (
-            <Card cards={title} />
+            <Card key={title} cards={title} />
           ))}
         </div>
         <div className={styles.creator}>
