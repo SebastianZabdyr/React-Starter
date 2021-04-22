@@ -4,9 +4,11 @@ import styles from './Card.scss';
 
 class Card extends React.Component {
   render(){
+    const {title} = this.props;
+
     return (
       <div className={styles.component}>
-        {this.props.cards}
+        {title}
       </div>
     );
   }
