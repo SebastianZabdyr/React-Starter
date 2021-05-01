@@ -18,11 +18,13 @@ export const settings = {
 export const infoData = {
   titleText:'INFOimages',
   image:'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  pageText:'it is pageText for info subPage',
 };
 
 export const faqData = {
   titleText:'FAQimage',
   image:'https://images.pexels.com/photos/2789781/pexels-photo-2789781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  pageText:'it is pageText for FAQ subPage',
 };
 
 export const pageContents = {
