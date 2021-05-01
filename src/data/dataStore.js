@@ -12,6 +12,17 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  headerIcon: 'home',
+};
+
+export const infoData = {
+  titleText:'INFOimages',
+  image:'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+};
+
+export const faqData = {
+  titleText:'FAQimage',
+  image:'https://images.pexels.com/photos/2789781/pexels-photo-2789781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
 };
 
 export const pageContents = {
