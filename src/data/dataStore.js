@@ -88,7 +88,19 @@ export const listData = {
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
+    title: 'LIST-1',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'LIST-2',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'LIST-3',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
@@ -114,8 +126,44 @@ const columns = [
     icon: 'gamepad',
   },
   {
+    id: 'column-5',
+    listId: 'list-2',
+    title: 'Books-list-2',
+    icon: 'book',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-2',
+    title: 'Movies-list-2',
+    icon: 'film',
+  },
+  {
+    id: 'column-7',
+    listId: 'list-3',
+    title: 'Books-list-3',
+    icon: 'book',
+  },
+  {
+    id: 'column-8',
+    listId: 'list-3',
+    title: 'Movies-list-3',
+    icon: 'film',
+  },
+  {
+    id: 'column-4',
+    listId: 'list-1',
+    title: 'Strange column',
+    icon: 'question',
+  },
+  {
     id: 'column-4',
     listId: 'list-2',
+    title: 'Strange column',
+    icon: 'question',
+  },
+  {
+    id: 'column-4',
+    listId: 'list-3',
     title: 'Strange column',
     icon: 'question',
   },
@@ -151,6 +199,26 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-5',
+    title: 'Harry Potter Star Wars',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-6',
+    title: 'Star Harry Wars Potter',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-7',
+    title: 'Star Wars Harry Potter',
+  },
+  {
+    id: 'card-10',
+    columnId: 'column-8',
+    title: 'Potter Wars Star Harry',
   },
 ];
 
